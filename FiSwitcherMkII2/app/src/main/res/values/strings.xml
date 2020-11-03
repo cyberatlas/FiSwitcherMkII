@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">FiSwitcherMkII</string>
+    <string name="selection_instruction"> Select the carrier to switch to. The code will be copied to your clipboard. </string>
+
 </resources>

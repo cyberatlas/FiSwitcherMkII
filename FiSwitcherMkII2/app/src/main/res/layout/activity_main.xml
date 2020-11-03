@@ -2,7 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/button1"
+    android:id="@+id/mainlayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
@@ -23,11 +23,11 @@
 
     <Button
         android:id="@+id/uscellular"
-        android:layout_width="172dp"
-        android:layout_height="59dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="180dp"
-        android:text="USCellular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="164dp"
+        android:text="US Cellular"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -35,8 +35,8 @@
         android:id="@+id/tmobile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="176dp"
-        android:layout_marginEnd="48dp"
+        android:layout_marginTop="164dp"
+        android:layout_marginEnd="20dp"
         android:text="TMobile"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
@@ -45,10 +45,10 @@
         android:id="@+id/sprint"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="176dp"
+        android:layout_marginTop="164dp"
         android:text="Sprint"
         app:layout_constraintEnd_toStartOf="@+id/tmobile"
-        app:layout_constraintHorizontal_bias="0.319"
+        app:layout_constraintHorizontal_bias="0.461"
         app:layout_constraintStart_toEndOf="@+id/uscellular"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -56,9 +56,10 @@
         android:id="@+id/auto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="76dp"
+        android:layout_marginTop="108dp"
         android:text="Auto Switch"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/sprint" />
 
@@ -71,5 +72,34 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/auto" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="343dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:text="@string/selection_instruction"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="247dp"
+        android:layout_height="wrap_content"
+        android:text="Press this to open dialer. Then press and hold and paste the code."
+        app:layout_constraintBottom_toTopOf="@+id/dialer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/auto" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Use Fi's automatic carrier switching."
+        app:layout_constraintBottom_toTopOf="@+id/auto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
